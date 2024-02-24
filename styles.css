@@ -42,24 +42,34 @@ header:hover h1 {
     border-radius: 5px;
     padding: 20px;
     width: 300px;
-    display: flex;
-    flex-direction: column;
+    position: relative; /* Cần thiết để tạo hiệu ứng slide */
 }
 
 .game h2 {
     margin-top: 0;
 }
 
-.game-description {
-    display: none; /* Mặc định ẩn mô tả */
+.description {
+    display: none; /* Ẩn mô tả mặc định */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    transition: transform 0.5s ease-in-out;
 }
 
-.game:hover .game-description {
+.game:hover .description {
     display: block; /* Hiển thị mô tả khi hover */
 }
 
+.game:hover .description.visible {
+    transform: translateY(0); /* Hiển thị mô tả với hiệu ứng slide từ dưới lên */
+}
+
 .game a {
-    margin-top: auto; /* Đặt nút tải về ở dưới cùng */
     display: block;
     text-align: center;
     padding: 10px;
