@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Game 1",
+        "description": "Mô tả về game 1.",
+        "downloadLink": "#"
+    },
+    {
+        "name": "Game 2",
+        "description": "Mô tả về game 2.",
+        "downloadLink": "#"
+    }
+]
