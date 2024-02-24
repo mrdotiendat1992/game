@@ -42,12 +42,8 @@ header:hover h1 {
     border-radius: 5px;
     padding: 20px;
     width: 300px;
-    overflow: hidden; /* Ẩn phần mô tả */
-    transition: height 0.5s ease-in-out;
-}
-
-.game:hover {
-    height: auto; /* Hiển thị phần mô tả khi hover */
+    display: flex;
+    flex-direction: column;
 }
 
 .game h2 {
@@ -55,18 +51,19 @@ header:hover h1 {
 }
 
 .description {
-    display: none; /* Ẩn mô tả ban đầu */
+    display: none;
 }
 
 .game:hover .description {
-    display: block; /* Hiển thị mô tả khi hover */
+    display: block;
 }
 
 .game a {
+    margin-top: auto; /* Đặt nút tải về ở dưới cùng */
     display: block;
     text-align: center;
     padding: 10px;
-    background-color: #333;
+    background-color: #1c18f5;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
