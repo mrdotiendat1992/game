@@ -50,12 +50,12 @@ header:hover h1 {
     margin-top: 0;
 }
 
-.description {
-    display: none;
+.game-description {
+    display: none; /* Mặc định ẩn mô tả */
 }
 
-.game:hover .description {
-    display: block;
+.game:hover .game-description {
+    display: block; /* Hiển thị mô tả khi hover */
 }
 
 .game a {
@@ -63,7 +63,7 @@ header:hover h1 {
     display: block;
     text-align: center;
     padding: 10px;
-    background-color: #1c18f5;
+    background-color: #333;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
