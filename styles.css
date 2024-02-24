@@ -42,7 +42,8 @@ header:hover h1 {
     border-radius: 5px;
     padding: 20px;
     width: 300px;
-    position: relative; /* Cần thiết để tạo không gian tương đối cho phần mô tả */
+    position: relative;
+    overflow: hidden; /* Hiển thị thanh cuộn */
 }
 
 .game h2 {
@@ -50,24 +51,25 @@ header:hover h1 {
 }
 
 .description {
-    display: none; /* Ẩn mô tả mặc định */
     position: absolute;
     top: 0;
-    right: 0; /* Hiển thị bên phải */
-    width: 50%; /* Chiều rộng của phần mô tả */
+    right: 0;
+    width: 50%;
     background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
     padding: 10px;
     transition: transform 0.5s ease-in-out;
-    z-index: 1; /* Đảm bảo nó đè lên game cha */
+    z-index: 1;
+    overflow-y: auto; /* Thêm thanh cuộn */
+    max-height: calc(100% - 40px); /* Giới hạn độ dài */
 }
 
 .game:hover .description {
-    display: block; /* Hiển thị mô tả khi hover */
+    display: block;
 }
 
 .game a {
-    margin-top: auto; /* Đặt nút tải về ở dưới cùng */
+    margin-top: auto;
     display: block;
     text-align: center;
     padding: 10px;
