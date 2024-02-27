@@ -53,7 +53,7 @@ header:hover h1 {
     margin-top: 0;
     color: #ccc;
     font-size: 1.5em; /* Kích thước nhỏ hơn cho tiêu đề */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Đổ bóng cho tiêu đề */
+    text-shadow: 4px 4px 4px rgba(210, 173, 4, 0.5); /* Đổ bóng cho tiêu đề */
 }
 
 .description {
