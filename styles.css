@@ -44,6 +44,9 @@ header:hover h1 {
     width: 300px;
     position: relative;
     overflow: hidden; /* Hiển thị thanh cuộn */
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease-in-out;
 }
 
 .game h2 {
