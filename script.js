@@ -8,9 +8,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 const gameDiv = document.createElement('div');
                 gameDiv.classList.add('game');
 
-                const title = document.createElement('h2');
-                title.textContent = game.name;
-
                 const description = document.createElement('p');
                 description.classList.add('description');
                 description.textContent = game.description;
@@ -19,7 +16,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 link.href = game.downloadLink;
                 link.textContent = 'Tải về';
 
-                gameDiv.appendChild(title);
                 gameDiv.appendChild(description);
                 gameDiv.appendChild(link);
 
