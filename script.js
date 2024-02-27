@@ -1,13 +1,3 @@
-function showDescription(element) {
-    var description = element.querySelector('.description');
-    description.classList.add('visible');
-}
-
-function hideDescription(element) {
-    var description = element.querySelector('.description');
-    description.classList.remove('visible');
-}
-
 document.addEventListener("DOMContentLoaded", function() {
     fetch('game.json')
         .then(response => response.json())
@@ -21,10 +11,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 const title = document.createElement('h2');
                 title.textContent = game.name;
 
-                const image = document.createElement('img');
-                image.src = game.image;
-                image.alt = game.name + " Image"; // Đặt alt cho ảnh
-
                 const description = document.createElement('p');
                 description.classList.add('description');
                 description.textContent = game.description;
@@ -34,9 +20,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 link.textContent = 'Tải về';
 
                 gameDiv.appendChild(title);
-                gameDiv.appendChild(image); // Thêm ảnh vào div game
                 gameDiv.appendChild(description);
                 gameDiv.appendChild(link);
+
+                // Thiết lập hình ảnh là background của div game
+                const image = new Image();
+                image.src = game.image;
+                image.onload = function() {
+                    gameDiv.style.backgroundImage = `url('${game.image}')`;
+                };
 
                 gameList.appendChild(gameDiv);
             });
