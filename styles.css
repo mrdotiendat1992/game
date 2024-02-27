@@ -51,9 +51,9 @@ header:hover h1 {
 
 .game h2 {
     margin-top: 0;
-    color: #ccc;
+    color: #ff0000;
     font-size: 1.5em; /* Kích thước nhỏ hơn cho tiêu đề */
-    text-shadow: 4px 4px 4px rgba(210, 173, 4, 0.5); /* Đổ bóng cho tiêu đề */
+    text-shadow: 4px 4px 4px rgb(255, 208, 0); /* Đổ bóng cho tiêu đề */
 }
 
 .description {
