@@ -60,7 +60,7 @@ header:hover h1 {
     display: flex;
     flex-direction: column; /* Sắp xếp các phần tử con dọc theo cột */
     justify-content: space-between; /* Các phần tử con sẽ chia đều không gian dọc */
-    height: 100%; /* Đảm bảo ô game có chiều cao cố định */
+    height: 100px; /* Đảm bảo ô game có chiều cao cố định */
     opacity: 0.8;
 }
 
