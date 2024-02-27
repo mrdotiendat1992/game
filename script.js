@@ -28,6 +28,11 @@ document.addEventListener("DOMContentLoaded", function() {
                 image.src = game.image;
                 image.onload = function() {
                     gameDiv.style.backgroundImage = `url('${game.image}')`;
+                    gameDiv.style.backgroundSize = 'cover';
+                    gameDiv.style.backgroundPosition = 'center';
+                    gameDiv.style.backgroundRepeat = 'no-repeat';
+                    gameDiv.style.backgroundOpacity = '0.5';
+
                 };
 
                 gameList.appendChild(gameDiv);
