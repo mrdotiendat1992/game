@@ -89,3 +89,26 @@ header:hover h1 {
 .game a:hover {
     background-color: #555;
 }
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.marquee {
+    animation: marquee 5s linear infinite;
+    white-space: nowrap;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
