@@ -1,2 +1,2 @@
-# game
-Web game
+# Static game PC store with html, js and css
+

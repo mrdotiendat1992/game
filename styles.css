@@ -73,13 +73,6 @@ header:hover h1 {
     height: 200px; /* Đảm bảo ô game có chiều cao cố định */
 }
 
-.game h2 {
-    margin-top: 0;
-    font-size: 1.5em; /* Kích thước nhỏ hơn cho tiêu đề */
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-shadow: #fff 0px 0px 5px;
-}
-
 .description {
     display: none;
     position: absolute;
@@ -107,6 +100,8 @@ header:hover h1 {
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
+    margin-bottom: 0.5rem;
+    transition: background-color 0.3s ease;
 }
 
 .game a:hover {
