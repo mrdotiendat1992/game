@@ -76,7 +76,7 @@ header:hover h1 {
 }
 
 .game a {
-    margin-top: auto;
+    margin-bottom: 0;
     display: block;
     text-align: center;
     padding: 10px;
