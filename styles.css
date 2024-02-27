@@ -65,7 +65,7 @@ header:hover h1 {
     overflow: hidden;
     color: white;
     background-size: cover;
-    background-position: center;
+    background-position: top center;
     transition: transform 0.5s ease-in-out;
     display: flex;
     flex-direction: column; /* Sắp xếp các phần tử con dọc theo cột */
