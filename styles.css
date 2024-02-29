@@ -12,6 +12,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    min-height: 100vh; /* Thiết lập chiều cao tối thiểu bằng 100% chiều cao của viewport */
+    display: flex;
+    flex-direction: column; /* Dùng flexbox để footer luôn ở dưới cùng */
 }
 
 header {
@@ -111,7 +114,9 @@ header:hover h1 {
 footer {
     background-color: #4CAF50;
     color: #fff;
+    padding: 20px 0;
     text-align: center;
+    margin-top: auto; /* Đảm bảo footer luôn nằm ở dưới cùng */
 }
 
 footer p {
