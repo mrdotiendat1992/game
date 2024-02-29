@@ -28,6 +28,9 @@ document.addEventListener("DOMContentLoaded", function() {
                                     gameLink.textContent = 'Download';
                                     gameLink.href = game.downloadLink;
 
+                                    gameItem.appendChild(gameDescription);
+                                    gameItem.appendChild(gameLink);
+
                                     gameList.appendChild(gameItem);
 
                                 }
