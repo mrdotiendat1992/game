@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 tagLink.textContent = tag;
                 tagLink.className = 'btn btn-primary';
                 tagLink.style.width = '100px';
-                tagLink.onClick = function() {
+                tagLink.onclick = function() {
                     fetch('game.json')
                         .then(response => response.json())
                         .then(data => {
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                         <a href="${game.downloadLink}" target="_blank">Download</a>
                                     `;
                                     gameList.appendChild(gameItem);
-                                    
+
                                 }
                             })
                         })
