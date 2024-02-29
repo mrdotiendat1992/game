@@ -7,13 +7,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 const tagLink = document.createElement('a');
                 tagLink.href = `#${tag}`;
                 tagLink.textContent = tag;
+                tagLink.className = 'btn btn-primary';
+                tagLink.style.width = '100px';
 
-                const tagDiv = document.createElement('div');
-                tagDiv.classList.add('tag');
-                
-                tagDiv.appendChild(tagLink);
-
-                gameList.appendChild(tagDiv);
+                gameList.appendChild(tagLink);
             });
         });
     });
