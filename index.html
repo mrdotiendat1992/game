@@ -20,46 +20,22 @@
     </head>
     <body>
         <header>
-            <div class="container">
-                <div class="header-left">
-                    <h1>PC GAMES</h1>
-                </div>
-                <div class="header-right">
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/datkhongchin11" target="_blank"><i class="fab fa-facebook"></i></a>
-                        <a href="https://www.youtube.com/channel/UCFW-6zawGHFRobD3f24dflg" target="_blank"><i class="fab fa-youtube"></i></a>
-                        <a href="https://github.com/mrdotiendat1992" target="_blank"><i class="fab fa-github"></i></a>
-                    </div>
+            <div class="header-left">
+                <h1>PC GAMES</h1>
+            </div>
+            <div class="header-right">
+                <div class="social-links">
+                    <a href="https://www.facebook.com/datkhongchin11" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.youtube.com/channel/UCFW-6zawGHFRobD3f24dflg" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://github.com/mrdotiendat1992" target="_blank"><i class="fab fa-github"></i></a>
                 </div>
             </div>
         </header>
         <div class="game-list" id="gameList">
 
         </div>
-        <script src="https://www.paypal.com/sdk/js?client-id=AZ6X-fR83PIAXNCmBuHJqFIq3uOP-82R98PswMW9C3HtmnzDs0LcaJi89tJdymTrDMM5oswpEe08T4HD&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
-        <script>
-        paypal.Buttons({
-            style: {
-                shape: 'pill',
-                color: 'blue',
-                layout: 'horizontal',
-                label: 'subscribe'
-            },
-            createSubscription: function(data, actions) {
-                return actions.subscription.create({
-                /* Creates the subscription */
-                plan_id: 'P-65291576DK421583TMXP7FSA'
-                });
-            },
-            onApprove: function(data, actions) {
-                alert(data.subscriptionID); // You can add optional success message for the subscriber here
-            }
-        }).render('#paypal-button-container-P-65291576DK421583TMXP7FSA'); // Renders the PayPal button
-        </script>
         <footer>
-            <div class="container">
-                <p>&copy; 2024 My Game Store. All rights reserved.</p>
-            </div>
+            <p>&copy; 2024 My Game Store. All rights reserved.</p>
         </footer>    
         <script src="script.js"></script>
             <!--Start of Tawk.to Script-->
