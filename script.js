@@ -20,12 +20,13 @@ document.addEventListener("DOMContentLoaded", function() {
                                     gameItem.className = 'game';
                                     gameItem.style.backgroundImage = `url(${game.image})`;
                                     
-                                    const gameTitle = document.createElement('h2');
-                                    gameTitle.textContent = game.name;
-                                    
                                     const gameDescription = document.createElement('p');
                                     gameDescription.textContent = game.description;
                                     gameDescription.className = 'description';
+
+                                    const gameLink = document.createElement('a');
+                                    gameLink.textContent = 'Download';
+                                    gameLink.href = game.downloadLink;
 
                                     gameList.appendChild(gameItem);
 
