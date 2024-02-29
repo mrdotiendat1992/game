@@ -1,4 +1,4 @@
-[
+{"games": [
     {
         "name": "Yu-Gi-Oh! Power of Chaos: Yugi the Destiny",
         "description": "Yu-Gi-Oh! Power of Chaos: Yugi the Destiny is the first Yu-Gi-Oh! game for PC and the first of the three Power of Chaos games. This first game includes 155 cards, most of which are from Legend of Blue Eyes White Dragon and Starter Deck: Yugi, two are from Metal Raiders, one is from Spell Ruler, another is from Tournament Pack: 3rd Season and the other is from Starter Deck: Pegasus.",
@@ -111,4 +111,6 @@
         "image": "images/games/X_Men_vs_Street_Fighter.png",
         "tags": ["xmen","streetfighter", "action"]
     }
-]
+],
+"tag": ["yugi","card","action","football","harrypotter","streetfighter","xmen","megaman","pes"]
+}
