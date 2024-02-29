@@ -18,12 +18,15 @@ document.addEventListener("DOMContentLoaded", function() {
                                 if (game.tags.includes(tag)) {
                                     const gameItem = document.createElement('div');
                                     gameItem.className = 'game';
-                                    gameItem.innerHTML = `
-                                        <img src="${game.image}" alt="${game.name}">
-                                        <h3>${game.name}</h3>
-                                        <p>${game.description}</p>
-                                        <a href="${game.downloadLink}" target="_blank">Download</a>
-                                    `;
+                                    gameItem.style.backgroundImage = `url(${game.image})`;
+                                    
+                                    const gameTitle = document.createElement('h2');
+                                    gameTitle.textContent = game.name;
+                                    
+                                    const gameDescription = document.createElement('p');
+                                    gameDescription.textContent = game.description;
+                                    gameDescription.className = 'description';
+
                                     gameList.appendChild(gameItem);
 
                                 }
