@@ -16,8 +16,12 @@ document.addEventListener("DOMContentLoaded", function() {
                 link.href = game.downloadLink;
                 link.textContent = 'Tải về';
 
+                const paypalButton = document.createElement('div');
+                paypalButton.id = 'paypal-button-container-P-65291576DK421583TMXP7FSA';
+
                 gameDiv.appendChild(description);
                 gameDiv.appendChild(link);
+                gameDiv.appendChild(paypalButton);
 
                 // Thiết lập hình ảnh là background của div game
                 const image = new Image();
