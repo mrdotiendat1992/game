@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     fetch('game.json')
         .then(response => response.json())
         .then(data => {
-            const gameList = document.getElementById('gameList');
+            const tagList = document.getElementById('tagList');
             data.listtag.forEach(tag => {
                 const tagLink = document.createElement('a');
                 tagLink.textContent = tag;
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
                             })
                         })
                 }
-                gameList.appendChild(tagLink);
+                tagList.appendChild(tagLink);
                 
             });
         });
