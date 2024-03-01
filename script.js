@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(data => {
             const tagList = document.getElementById('tagList');
             data.tags.forEach(tag => {
-                const tagElement = document.createElement('span');
+                const tagElement = document.createElement('a');
                 tagElement.textContent = tag;
                 tagElement.classList.add('tag');
                 tagElement.addEventListener('click', () => filterGames(tag, data.games));
