@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
             data.listtag.forEach(tag => {
                 const tagElement = document.createElement('a');
                 tagElement.textContent = tag;
-                tagElement.classList.add('btn btn-success');
+                tagElement.className = 'btn btn-success';
                 tagElement.style.padding = '5px';
                 tagElement.addEventListener('click', () => filterGames(tag, data.listgame));
                 tagList.appendChild(tagElement);
