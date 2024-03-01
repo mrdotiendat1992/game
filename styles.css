@@ -52,15 +52,6 @@ header:hover h1 {
     transform: scale(1.05);
 }
 
-.tag-list {
-    margin: 5px;
-
-}
-
-#tag {
-    padding: 5px;
-}
-
 .game-list {
     display: flex;
     flex-wrap: wrap;
