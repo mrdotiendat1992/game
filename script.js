@@ -4,12 +4,11 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(response => response.json())
         .then(data => {
             const tagList = document.getElementById('tagList');
-            data.listtag.forEach(tag => {
-                const tagElement = document.createElement('a');
+            data.tags.forEach(tag => {
+                const tagElement = document.createElement('span');
                 tagElement.textContent = tag;
                 tagElement.classList.add('tag');
-                tagElement.style.padding = '5px';
-                tagElement.addEventListener('click', () => filterGames(tag, data.listgame));
+                tagElement.addEventListener('click', () => filterGames(tag, data.games));
                 tagList.appendChild(tagElement);
             });
         });
@@ -29,15 +28,8 @@ document.addEventListener("DOMContentLoaded", function () {
         gameList.innerHTML = '';
         games.forEach(game => {
             const gameElement = document.createElement('div');
-            gameElement.classList.add('game');
-            gameElement.style.backgroundImage = `url('${game.image}')`;
-            const gameDescription = document.createElement('p');
-            gameDescription.textContent = game.description;
-            const gameDownloadLink = document.createElement('a');
-            gameDownloadLink.textContent = 'Download';
-
-            gameElement.appendChild(gameDescription);
-            gameElement.appendChild(gameDownloadLink);
+            gameElement.textContent = game.name;
+            gameList.appendChild(gameElement);
         });
     }
 });
