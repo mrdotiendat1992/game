@@ -4,12 +4,12 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(response => response.json())
         .then(data => {
             const tagList = document.getElementById('tagList');
-            data.tags.forEach(tag => {
+            data.listtag.forEach(tag => {
                 const tagElement = document.createElement('span');
                 tagElement.textContent = tag;
                 tagElement.classList.add('tag');
                 tagElement.style.padding = '5px';
-                tagElement.addEventListener('click', () => filterGames(tag, data.games));
+                tagElement.addEventListener('click', () => filterGames(tag, data.listgame));
                 tagList.appendChild(tagElement);
             });
         });
