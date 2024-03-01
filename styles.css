@@ -52,6 +52,14 @@ header:hover h1 {
     transform: scale(1.05);
 }
 
+.tag-list {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
 .game-list {
     display: flex;
     flex-wrap: wrap;
