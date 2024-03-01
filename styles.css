@@ -53,11 +53,12 @@ header:hover h1 {
 }
 
 .tag-list {
-    margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
+    margin: 5px;
+
+}
+
+#tag {
+    padding: 5px;
 }
 
 .game-list {

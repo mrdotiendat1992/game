@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
             data.tags.forEach(tag => {
                 const tagElement = document.createElement('span');
                 tagElement.textContent = tag;
-                tagElement.style.padding = '5px';
+                tagElement.style.margin = '5px';
                 tagElement.classList.add('tag');
                 tagElement.addEventListener('click', () => filterGames(tag, data.games));
                 tagList.appendChild(tagElement);
