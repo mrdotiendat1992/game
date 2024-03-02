@@ -73,21 +73,16 @@ header:hover .social-links {
     justify-content: center;
     gap: 20px;
     padding: 20px;
+    justify-content: space-between; /* Các phần tử con sẽ chia đều không gian dọc */
 }
 
 .game {
-    border-radius: 5px;
-    padding: 20px;
     width: 300px;
-    position: relative;
-    overflow: hidden;
-    color: white;
-    background-size: cover;
-    background-position: top center;
     display: flex;
     flex-direction: column; /* Sắp xếp các phần tử con dọc theo cột */
-    justify-content: space-between; /* Các phần tử con sẽ chia đều không gian dọc */
-    height: 230px; /* Đảm bảo ô game có chiều cao cố định */
+    align-items: center;
+    height: 200px; /* Đảm bảo ô game có chiều cao cố định */
+    position: relative;
 }
 
 .description {
