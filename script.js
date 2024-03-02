@@ -32,13 +32,13 @@ document.addEventListener("DOMContentLoaded", function () {
             const gameLink = document.createElement('a');
             gameLink.href = game.downloadLink;
             gameLink.textContent = game.name;
-            gameElement.appendChild(gameLink);
-            gameElement.className = 'game';
-            gameList.appendChild(gameElement);
+            gameElement.className = 'game';            
             const gameDescription = document.createElement('p');
             gameDescription.className = 'description';
             gameDescription.textContent = game.description;
+            gameElement.appendChild(gameLink);
             gameElement.appendChild(gameDescription);
+            gameList.appendChild(gameElement);
         });
     }
 });
