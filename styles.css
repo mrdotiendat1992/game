@@ -71,11 +71,13 @@ header:hover .social-links {
 #tag {
     padding: 10px;
     border-radius: 5px;
+    gap: 10px;
+
 }
 
 #tagList {
     justify-content: center;
-    padding: 20px;
+    padding: 10px;
 }
 
 .game-list {
@@ -97,6 +99,12 @@ header:hover .social-links {
     flex-direction: column; /* Sắp xếp các phần tử con dọc theo cột */
     justify-content: space-between; /* Các phần tử con sẽ chia đều không gian dọc */
     height: 200px; /* Đảm bảo ô game có chiều cao cố định */
+    transition: transform 0.3s ease-in-out;
+    -webkit-transition: transform 0.3s ease-in-out;
+    -moz-transition: transform 0.3s ease-in-out;
+    -ms-transition: transform 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out;
+    gap: 20px;
 }
 
 .description {
@@ -130,7 +138,7 @@ header:hover .social-links {
 }
 
 .game a:hover {
-    background-color: #555;
+    background-color: #ffffff;
 }
 
 footer {
