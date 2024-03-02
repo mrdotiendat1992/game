@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Function to filter games based on tag
     function filterGames(tag, games) {
-        const filteredGames = games.listgame.filter(game => game.tags.includes(tag));
+        const filteredGames = games.filter(game => game.tags.includes(tag));
         displayGames(filteredGames);
     }
 
