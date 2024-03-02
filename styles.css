@@ -46,10 +46,30 @@ header h1 {
     padding: 0;
     font-size: 2em;
     transition: transform 0.5s ease-in-out;
+    -webkit-transition: transform 0.5s ease-in-out;
+    -moz-transition: transform 0.5s ease-in-out;
+    -ms-transition: transform 0.5s ease-in-out;
+    -o-transition: transform 0.5s ease-in-out;
 }
 
-header:hover h1 {
+header:hover .social-links {
     transform: scale(1.05);
+}
+
+#text_logo {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5em;
+    transition: transform 0.5s ease-in-out;
+    -webkit-transition: transform 0.5s ease-in-out;
+    -moz-transition: transform 0.5s ease-in-out;
+    -ms-transition: transform 0.5s ease-in-out;
+    -o-transition: transform 0.5s ease-in-out;
+}
+
+#tag {
+    padding: 10px;
 }
 
 .game-list {
@@ -103,7 +123,7 @@ header:hover h1 {
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 130px;
+    margin-top: 120px;
     transition: background-color 0.3s ease;
 }
 

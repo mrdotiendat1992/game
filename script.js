@@ -7,9 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
             data.listtag.forEach(tag => {
                 const tagElement = document.createElement('a');
                 tagElement.textContent = tag;
-                tagElement.style.padding = '10px';
                 tagElement.className = 'btn btn-primary';
-                tagElement.classList.add('tag');
+                tagElement.id = 'tag';
                 tagElement.addEventListener('click', () => filterGames(tag, data.listgame));
                 tagList.appendChild(tagElement);
             });
