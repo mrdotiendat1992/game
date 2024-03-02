@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Load tags
-    fetch('game.json')
+    fetch('data.json')
         .then(response => response.json())
         .then(data => {
             const tagList = document.getElementById('tagList');
@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 const tagElement = document.createElement('a');
                 tagElement.textContent = tag;
                 tagElement.classList.add('tag');
-                tagElement.addEventListener('click', () => filterGames(tag, data.games));
+                tagElement.addEventListener('click', () => filterGames(tag, data.listgame));
                 tagList.appendChild(tagElement);
             });
         });
