@@ -35,6 +35,9 @@ document.addEventListener("DOMContentLoaded", function () {
             gameElement.appendChild(gameLink);
             gameElement.className = 'game';
             gameList.appendChild(gameElement);
+            const gameDescription = document.createElement('p');
+            gameDescription.textContent = game.description;
+            gameElement.appendChild(gameDescription);
         });
     }
 });

@@ -135,6 +135,7 @@ header:hover .social-links {
 
 .game a:hover {
     background-color: #ffffff;
+    color: #333;
 }
 
 footer {
