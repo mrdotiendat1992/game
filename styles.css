@@ -70,7 +70,6 @@ header:hover .social-links {
 
 .tag-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Tạo lưới động cho các tag */
     gap: 10px; /* Khoảng cách giữa các tag */
 }
 
@@ -84,7 +83,6 @@ header:hover .social-links {
 
 .game-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Tạo lưới động cho các game */
     gap: 20px; /* Khoảng cách giữa các game */
 }
 
