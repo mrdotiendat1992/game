@@ -70,7 +70,7 @@ header:hover .social-links {
 
 .tag-list {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin-top: 20px;
 }
@@ -84,7 +84,7 @@ header:hover .social-links {
 .game-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin-top: 20px;
 }
