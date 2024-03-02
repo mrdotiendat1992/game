@@ -68,19 +68,19 @@ header:hover .social-links {
     -o-transition: transform 0.5s ease-in-out;
 }
 
-#tagList {
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-}
-
 #tag {
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
 }
 
-#gameList {
+#tagList {
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.game-list {
     justify-content: center;
     gap: 20px;
     padding: 20px;
@@ -95,7 +95,6 @@ header:hover .social-links {
     color: white;
     background-size: cover;
     background-position: top center;
-    transition: transform 0.5s ease-in-out;
     display: flex;
     flex-direction: column; /* Sắp xếp các phần tử con dọc theo cột */
     justify-content: space-between; /* Các phần tử con sẽ chia đều không gian dọc */
@@ -111,7 +110,6 @@ header:hover .social-links {
     background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
     padding: 10px;
-    transition: transform 0.5s ease-in-out;
     z-index: 1;
     overflow-y: auto; /* Thêm thanh cuộn */
     max-height: calc(100% - 40px); /* Giới hạn độ dài */

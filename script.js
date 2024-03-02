@@ -7,8 +7,9 @@ document.addEventListener("DOMContentLoaded", function () {
             data.listtag.forEach(tag => {
                 const tagElement = document.createElement('a');
                 tagElement.textContent = tag;
+                tagElement.style.padding = '10px';
                 tagElement.className = 'btn btn-primary';
-                tagElement.id = 'tag';
+                tagElement.classList.add('tag');
                 tagElement.addEventListener('click', () => filterGames(tag, data.listgame));
                 tagList.appendChild(tagElement);
             });
@@ -20,7 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // Function to filter games based on tag
     function filterGames(tag, games) {
         const filteredGames = games.filter(game => game.tags.includes(tag));
-        console.log(filteredGames);
         displayGames(filteredGames);
     }
 
