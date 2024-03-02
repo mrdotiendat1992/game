@@ -71,12 +71,10 @@ header:hover .social-links {
 #tag {
     padding: 10px;
     border-radius: 5px;
-    cursor: pointer;
 }
 
 #tagList {
     justify-content: center;
-    gap: 20px;
     padding: 20px;
 }
 
@@ -138,7 +136,7 @@ header:hover .social-links {
 footer {
     background-color: #4CAF50;
     color: #fff;
-    padding: 20px 0;
+    padding: 10px 0;
     text-align: center;
     margin-top: auto; /* Đảm bảo footer luôn nằm ở dưới cùng */
 }

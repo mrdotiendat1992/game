@@ -7,16 +7,14 @@ document.addEventListener("DOMContentLoaded", function () {
             data.listtag.forEach(tag => {
                 const tagElement = document.createElement('a');
                 tagElement.textContent = tag;
-                tagElement.style.padding = '10px';
-                tagElement.className = 'btn btn-primary';
-                tagElement.classList.add('tag');
+                tagElement.className = 'btn';
                 tagElement.addEventListener('click', () => filterGames(tag, data.listgame));
                 tagList.appendChild(tagElement);
             });
         });
 
     // Load all games initially
-    displayGames([]);
+    displayGames(["all", data.listgame]);
 
     // Function to filter games based on tag
     function filterGames(tag, games) {
@@ -33,7 +31,6 @@ document.addEventListener("DOMContentLoaded", function () {
             gameElement.style.backgroundImage = `url(${game.image})`;
             const gameLink = document.createElement('a');
             gameLink.href = game.downloadLink;
-            gameLink.target = '_blank';
             gameLink.textContent = game.name;
             gameElement.appendChild(gameLink);
             gameElement.className = 'game';
