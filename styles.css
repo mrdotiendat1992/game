@@ -15,6 +15,10 @@ body {
     min-height: 100vh; /* Thiết lập chiều cao tối thiểu bằng 100% chiều cao của viewport */
     display: flex;
     flex-direction: column; /* Dùng flexbox để footer luôn ở dưới cùng */
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Chia layout thành 2 cột */
+    gap: 20px; /* Khoảng cách giữa các cột */
+    margin: 20px;
 }
 
 header {
@@ -70,19 +74,21 @@ header:hover .social-links {
 
 .tag-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(10px, 1fr)); /* Tạo lưới động cho các tag */
-    gap: 10px; /* Khoảng cách giữa các tag */
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Tạo lưới động cho các tag */
+    gap: 5px; /* Khoảng cách giữa các tag */
 }
 
 .tag {
-    padding: 5 5px;
+    display: inline-block;
+    padding: 5px 5px;
+    background-color: #f2f2f2;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .game-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(10px, 1fr)); /* Tạo lưới động cho các tag */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Tạo lưới động cho các game */
     gap: 20px; /* Khoảng cách giữa các game */
 }
 
