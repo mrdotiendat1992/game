@@ -70,6 +70,16 @@ header:hover .social-links {
 
 #tag {
     padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
 }
 
 .game-list {
