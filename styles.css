@@ -68,20 +68,19 @@ header:hover .social-links {
     -o-transition: transform 0.5s ease-in-out;
 }
 
+.tag-list {
+    display: flex;
+}
+
+.tag {
+    position: relative;
+}
 
 .game-list {
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-    justify-content: space-between; /* Các phần tử con sẽ chia đều không gian dọc */
+    display: flex;
 }
 
 .game {
-    width: 300px;
-    display: flex;
-    flex-direction: column; /* Sắp xếp các phần tử con dọc theo cột */
-    align-items: center;
-    height: 200px; /* Đảm bảo ô game có chiều cao cố định */
     position: relative;
 }
 
