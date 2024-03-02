@@ -7,14 +7,14 @@ document.addEventListener("DOMContentLoaded", function () {
             data.listtag.forEach(tag => {
                 const tagElement = document.createElement('a');
                 tagElement.textContent = tag;
-                tagElement.className = 'btn btn-primary btn-sm';
+                tagElement.className = 'btn btn-primary';
                 tagElement.addEventListener('click', () => filterGames(tag, data.listgame));
                 tagList.appendChild(tagElement);
             });
         });
 
     // Load all games initially
-    displayGames(["all", fetch('data.json').listgame]);
+    displayGames([]);
 
     // Function to filter games based on tag
     function filterGames(tag, games) {
