@@ -99,7 +99,7 @@ header:hover .social-links {
     display: flex;
     flex-direction: column; /* Sắp xếp các phần tử con dọc theo cột */
     justify-content: space-between; /* Các phần tử con sẽ chia đều không gian dọc */
-    height: 250px; /* Đảm bảo ô game có chiều cao cố định */
+    height: 200px; /* Đảm bảo ô game có chiều cao cố định */
 }
 
 .description {
@@ -129,7 +129,7 @@ header:hover .social-links {
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 120px;
+    margin-top: 110px;
     transition: background-color 0.3s ease;
 }
 
