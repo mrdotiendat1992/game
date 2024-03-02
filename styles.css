@@ -70,15 +70,23 @@ header:hover .social-links {
 
 .tag-list {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
 
 .tag {
     position: relative;
     margin: 20px;
+    width: 100px;
 }
 
 .game-list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
 
 .game {
