@@ -121,7 +121,7 @@ header:hover .social-links {
 
 .game a {
     display: block;
-    text-align:justify;
+    text-align: center;
     background-color: #333;
     color: #fff;
     text-decoration: none;
